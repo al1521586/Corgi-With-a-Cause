@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <title>PLAY GAME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.typekit.net/ztu2luk.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<style>
+body {
+      line-height: 1.8;
+      color: #36648B;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+      background-color:rgb(240,248,255); /* Black*/
+      color: #36648B;
+  }
+  
+  .container-fluid {
+    padding-top: 100px;
+    padding-bottom: 140px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+	;
+}
+
+.navbar-nav li a:hover {
+    color:#36648B!important; /*the color when you hover*/
+}
+
+</style>
+ <script>
+screen0 = true;//title page
+screen1 = false;//first fact page
+screen2 = false;//adds "but you can help!"
+screen3 = false;//this is rufus page
+screen4 = false;//instruction part 1
+screen5 = false;//instruction part 2
+screen6 = false;//are you ready? page
+screen7 = false;//GAME PAGE GAME PAGE GAME PAGE GAME PAGE
+      
+function myFunction() {
+        var image = document.getElementById("keyword");
+		if (screen0 ==true){
+			image.src = "TITLEPAGE.png"; //TITLEPAGE GOES HERE
+			screen0 = false;
+			screen1 = true;
+			}
+		if (screen1 ==true){
+			image.src = "FACTPAGE1.png";
+			screen1 = false;
+			screen2 = true;
+			}
+		else if(screen2 ==true){
+			image.src = "FACTPAGE2.png";
+			screen2 = false;
+			screen3 = true;
+			}
+		else if(screen3 ==true){
+			image.src = "THISISRUFUS.png";
+			screen3 = false;
+			screen4 = true;
+			}
+		else if(screen4 ==true){
+			image.src = "INSTRUCTION1.png";
+			screen4 = false;
+			screen5 = true;
+			}
+		else if(screen5 ==true){
+			image.src = "INSTRUCTION2.png";
+			screen5 = false;
+			screen6 = true;
+			}
+		else if(screen6 ==true){
+			image.src = "Win.png"; //ARE YOU READY PAGE GOES HERE
+			screen6 = false;
+			screen7 = true;
+			}
+		else {
+		//game code somehow goes here!!!!!!!!!!!!!!!!!!!!!
+		screen7 =false;
+		screen0 = true; //instead of refreshing page?
+		}
+}
+</script>
+
+</head>
+<body style= "font-family: filson-soft">
+<nav class="navbar margin">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="why.html"><b>Corgi with a Cause</b></a>
+    </div>
+    <div class="collapse navbar-collapse " id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="CorgiWithACause.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="playgame.html">PLAY GAME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <img onclick="myFunction()" src="TITLEPAGE.png" id="keyword" alt="game">
+</div>
+
+</body></html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <title>ABOUT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.typekit.net/ztu2luk.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<style>
+body {
+      line-height: 1.8;
+      color: #36648B;
+  }
+  p {font-size: 16px; 
+  color: rgb(255,255,255);
+}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+      background-color:#333; /* Black*/
+      color: #36648B;
+  }
+
+
+  
+  .container-fluid {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+	;
+}
+
+.navbar-nav li a:hover {
+    color:#36648B!important; /*the color when you hover*/
+}
+blink { text-decoration: blink; }
+</style>
+
+ <script>
+	x=1;
+      function annabel() {
+        var image = document.getElementById("annabellee");
+		if (x==1){
+			image.src = "annabelfact.png"
+			x=2;
+			}
+		else{
+			image.src = "annabel.png";
+			x=1;
+			}
+		}
+	x=1;
+      function lauryn() {
+        var image = document.getElementById("laurynjenne");
+		if (x==1){
+			image.src = "laurynfact.png"
+			x=2;
+			}
+		else{
+			image.src = "lauryn.png";
+			x=1;
+			}
+		}
+	x=1;
+      function libby() {
+        var image = document.getElementById("libbyknell");
+		if (x==1){
+			image.src = "libbyfact.png"
+			x=2;
+			}
+		else{
+			image.src = "libby.png";
+			x=1;
+			}
+		}
+</script>
+
+</head>
+<body style = "font-family: filson-soft">
+<nav class="navbar margin">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="why.html"><b>Corgi with a Cause</b></a>
+    </div>
+    <div class="collapse navbar-collapse " id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="CorgiWithACause.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="playgame.html">PLAY GAME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h1 style = "color:#87CEEB;"><strong>About the Creators</strong></h1><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>ANNABEL LEE</p>
+      <img src="annabel.png" alt="Image" onclick= "annabel()" id= "annabellee" height ="300" width="300">
+	  <p></br></p>
+	  <p style = "font-size:20px; color:#87CEEB;"><strong>Web Developer and Games Artist</strong></p>
+	  <p>The Web Developer is responsible for programming the website and its interactions with the user.
+	  The Games Artist creates the visual elements of a game, such as the characters, objects, clothing, and logo.</p>
+    </div>
+    <div class="col-sm-4">
+      <p>LAURYN JENNE</p>
+      <img src="lauryn.png" alt="Image" height ="300" width="300" onclick = "lauren()" id = "laurenjenne" >
+	  <p></br></p>
+	  <p style = "font-size:20px; color:#87CEEB;"><strong>Game Programmer and Animator</strong></p>
+	  <p>The Game Programmer designs and writes the computer code that runs and controls the game. 
+	  The Games Animator is responsible for the portrayal of movement and behaviour within the game.</p>
+    </div>
+    <div class="col-sm-4">
+      <p>LIBBY KNELL</p>
+      <img src="libby.png" alt="Image" height ="300" width="300" onclick = "libby()" id = "libbyknell">
+	  <p></br></p>
+	  <p style = "font-size:20px; color:#87CEEB;"><strong>Lead Programmer and Game Designer</strong></p>
+	  <p>The Lead Programmer leads the programming team responsible for creating all the games' computer code. 
+	  The Game Designer devises what the game consists of and how it plays, defining all the core elements.</p>
+    </div>
+  </div>
+
+
+</div>
+
+</body></html>
